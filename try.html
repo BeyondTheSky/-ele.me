@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>突破轮播</title>
+		<style>
+		.ad-container{
+			height: 81px;
+			width: 100%;
+			margin-top: 100px;
+			position: relative;
+		}
+		.inside-container{
+			height:81px ;
+			position: relative;
+			overflow: hidden;
+		}
+		.inside-container ul{
+			position: relative;
+			transition: top 0.4s ease-in-out 0s;
+			list-style: outside none none;
+		}
+		.inside-container ul li{
+			height: 81px;
+			overflow: hidden;
+		}
+		.inside-container ul li img{
+			width: 960px;
+			height: 81px;
+		}
+		
+		
+		.ol-btn{
+			list-style: none;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+		.ol-btn li{
+			list-style: none;
+		}
+		.ol-btn li a{
+			cursor: pointer;
+			text-decoration: none;
+		}
+		
+		/*CSS3 图片轮播动画*/
+		@keyframes margintop{
+			from {margin-top:0px ;}
+			to {margin-top: -81px;}
+		}
+		@-moz-keyframes margintop{
+			from{margin-top: 0;}
+			to{margin-top: -181px;}
+		}
+		@-webkit-keyframes margintop{
+			from{margin-top: 0;}
+			to{margin-top: -181px;}
+		}
+		@-o-keyframes margintop{
+			from{margin-top: 0;}
+			to{margin-top: -181px;}
+		}
+		
+		.ul-pic{
+			animation: margintop 6s;
+			-moz-animation: margintop 6s;
+			-webkit-animation: margintop 6s;
+			-o-animation: margintop 6s;	/* Opera */
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="ad-container">
+			<div class="inside-container">
+			<ul id="ulPic" class="ul-pic">
+				<li>
+					<a href="#">
+						<img class="ul-img" src="img/pic1.jpeg" />
+					</a>
+				</li>
+				<li>
+					<a>
+						<img class="ul-img" src="img/pic2.png" />
+					</a>
+				</li>
+				<li>
+					<a>
+						<img class="ul-img" src="img/pic3.jpeg" />
+					</a>
+				</li>
+			</ul>
+			<ol class="ol-btn" id="olBtn">
+				<li class="ol-li"><a>1</a></li>
+				<li class="ol-li"><a>2</a></li>
+				<li class="ol-li"><a>3</a></li>
+			</ol>
+			</div>
+		</div>
+		<div style="width: 100%;height: 200px;background: burlywood;">
+		</div>
+	</body>
+	<script>
+	function getMyID(id){
+		return document.getElementById(id);
+	};
+	var olLi=document.getElementsByClassName("ol-li");
+	var ulImg=document.getElementsByClassName("ul-img");
+	var imgContainer=document.getElementById("ulPic");
+	function setMarginTop(){
+		
+	}
+	
+	for(var i=0;i<olLi.length;i++){
+		olLi[i].marginTop="-"+i*81+"px";
+			olLi[i].onclick=function(){
+//				alert(this.marginTop);
+				imgContainer.style.marginTop=this.marginTop;
+			}
+		}
+	window.onload=function(){
+	};
+	</script>
+
+</html>
