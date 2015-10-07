@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>汇道 | 帮助</title>
+		<link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/common/header.css">
+		<link rel="stylesheet" href="../css/common/footer.css">
+		<link rel="stylesheet" href="../css/help.css">
+	</head>
+
+	<body style="font-family: 'Helvetica Neue','Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;
+ font-size: 16px;">
+		<header class="header">
+			<nav class="navbar navbar-default navbar-fixed-top my-navbar">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#expand">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img class="logo" alt="汇道" src="../img/common/logo.png" />
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="expand">
+						<ul class="nav navbar-nav">
+							<li class="nav-item-li"><a href="home.html" class="nav-item">首页</a>
+							</li>
+							<li class="nav-item-li"><a href="function.html" class="nav-item">功能</a>
+							</li>
+							<li class="nav-item-li"><a href="document.html" class="nav-item">文档</a>
+							</li>
+							<li class="my-active"><a href="#" class="nav-item">帮助</a>
+							</li>
+							<li class="nav-item-li"><a href="aboutUs.html" class="nav-item">关于我们</a>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-right" role="search">
+							<a onclick="javascript:window.open('http://manage.huidao168.com/octopus_manage/channel');">
+								<button type="button" id="login" class="btn btn-primary btn-login">登录</button>
+							</a>
+							<a onclick="javascript:window.open('http://manage.huidao168.com/octopus_manage/channel/register/');">
+								<button type="button" id="reg" class="btn btn-primary btn-reg">注册</button>
+							</a>
+						</form>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</header>
+
+		<div class="help-main">
+			<div class="help-search text-center">
+				<div class="help_icon">
+					<img src="../img/help/help_part1_icon.png" />
+				</div>
+				<div class="input-group search-input">
+					<input id="searchText" type="text" class="form-control" placeholder="搜索您的问题或关键词">
+					<span class="input-group-btn">
+
+       					 <button id="searchBtn" class="btn btn-primary search-btn" type="button">搜索</button>
+
+      				</span>
+				</div>
+				<p>当你打算使用或已经在使用汇道，下面的文档可能会对你非常有帮助。尝试搜索关键词，看能否解决你的问题吧。</p>
+
+			</div>
+
+			<div class="question container text-center">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<img src="../img/help/help_logo1.png" />
+						<p id="leadItemA">汇道是什么?有什么用处?</p>
+						<p id="leadItemB">如何注册汇道帐号?</p>
+						<p id="leadItemC">什么是渠道商和服务商?</p>
+						<p id="leadItemD">如何修改个人信息?</p>
+						<p id="leadItemE">怎样邀请你的第一个服务商?</p>
+						<p id="leadItemF">怎么构建你的第一个服务?</p>
+						<p id="leadItemG">如何对你的服务进行分组?</p>
+						<p id="leadItemH">怎样把服务接入你的APP?</p>
+
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<img src="../img/help/help_logo2.png" />
+						<p id="AQItemA">如何修改注册信息？</p>
+						<p id="AQItemB">我的服务会被哪些人看到？</p>
+						<p id="AQItemC">启用服务是什么意思？</p>
+						<p id="AQItemD">组件是什么？我如何使用？</p>
+						<p id="AQItemE">如何使用消息推送通道？</p>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 for-more-help">
+						<span>没有找到想要的答案，发送反馈给客服获取帮助吧！</span>
+						<a>点击这里</a>
+						<span>获取更多帮助。</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer" class="footer container text-center">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<span>© 1995-2014 WONDERS INFORMATION CO.LTD.ALL RIGHT RESERVED.</span>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<span>万达信息股份有限公司版权所有 沪ICP备05002296号</span>
+				</div>
+			</div>
+		</footer>
+
+		<!--begin modal-->
+
+		<!--汇道是什么?有什么用处?-->
+		<div class="modal fade" id="leadModalA">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">汇道是什么?有什么用处?</h4>
+					</div>
+					<div class="modal-body">
+						<p style="text-indent:2em;">汇道是一个在企业移动化过程中，提供移动服务接入的开放性云服务平台，由服务管理平台、服务内容定制平台、移动端 SDK 三部分组成。服务商可以通过汇道快速接入自己的服务内容，以低成本获得服务和品牌的曝光；渠道商可以精准的发现并整合本行业的优质服务，提高服务品质。通过连接各领域的渠道资源和服务内容的方式，为行业用户提供一套完整的移动服务解决方案。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--如何注册汇道帐号?-->
+		<div class="modal fade" id="leadModalB">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">如何注册汇道帐号?</h4>
+					</div>
+					<div class="modal-body">
+						<p style="text-indent:2em;">汇道账号可通过邮箱注册，填写邮箱密码，对邮箱进行验证，最后进行下信息登记，即可成功注册汇道。</p>
+						<p style="text-indent:2em;">推送地址指的是你的应用里的消息推送地址，方便你及时处理来自用户的消息。</p>
+						<p style="text-indent:2em;">注册时提供的身份证信息仅供平台认证使用，请放心提交。</p>
+						<p style="text-indent:2em;">信息提交后，我们会尽快对信息进行审核，并将结果发送到你的账号邮箱，该过程最多不超过两个工作日，请留意下邮件。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--什么是渠道商和服务商?-->
+		<div class="modal fade" id="leadModalC">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">什么是渠道商和服务商?</h4>
+					</div>
+					<div class="modal-body">
+						<p style="text-indent:2em;">渠道商是指拥有某个领域或行业入口的渠道提供者，通常已拥有自己的移动终端，并建立起了自己的用户体系，如原生 APP等。通过汇道，渠道商可以获取平台上丰富的服务资源并能够自由的对这些资源进行配置，从而为用户提供丰富多样的服务。</p>
+						<p style="text-indent:2em;">服务商指拥有着优质线下资源的服务提供者。和开发独立的 APP 相比，服务商更希望让更多的用户在细分市场发现自己的服务。通过汇道，服务商就可以把自己的服务分配给多个渠道商使用，借助渠道让自己的服务到达更多的用户面前。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--如何修改个人信息?-->
+		<div class="modal fade" id="leadModalD">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">如何修改个人信息?</h4>
+					</div>
+					<div class="modal-body">
+						<p style="text-indent:2em;">在「渠道商信息」里，你可以修改你的账号信息，查看你的 ID 以及 AppKey等。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--怎样邀请你的第一个服务商?-->
+		<div class="modal fade" id="leadModalE">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">怎样邀请你的第一个服务商?</h4>
+					</div>
+					<div class="modal-body">
+						<p style="text-indent:2em;">登录汇道后，你可以点击右上角「创建」，填写服务商信息并完成创建，在服务商列表页面，对该服务商完成认证。</p>
+						<p style="text-indent:2em;">服务商也可以自己创建账号并提交给你审核，如果你发现服务商的资格有问题，在查看详情页面最下方-认证信息，选择认证不通过，同时在弹出框里告知对方哪里还有问题。</p>
+						<p style="text-indent:2em;">当服务商获得认证后，对方就可以登录后台并创建服务。你需要对服务的内容进行审核，是否符合规范。别忘记启用符合规范的服务，启用状态的服务才可以被平台检索、分配以及使用。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--怎么构建你的第一个服务?-->
+		<div class="modal fade" id="leadModalF">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">怎么构建你的第一个服务?</h4>
+					</div>
+					<div class="modal-body">
+						<p style="text-indent:2em;">在「服务管理」页，你可以清楚的查看来自不同渠道的服务：自有服务是你自己创建的并属于你的服务（不包含你帮助服务商创建的服务），渠道服务是你邀请的服务商创建的及其所属的服务，分配服务是汇道分配给你使用的服务。</p>
+						<p style="text-indent:2em;">你可以点击右上角「创建」，填写服务基本信息完成服务注册，已注册的服务还需要进行认证和启用。渠道商可自行对服务进行认证和启用，服务商需要提交给渠道商进行认证和启用。</p>
+						<p style="text-indent:2em;">每个服务都会有多个组件，用来在服务中直接使用。汇道默认提供多个行业组件，方便你创建服务时直接使用，当然，你也可以自行开发更多的组件。</p>
+						<p style="text-indent:2em;">在注册了服务后，点击「定制」，即可进入服务内容定制页面，在这里，你可以快速搭建起服务页面，丰富的模板+所见即所得的方式会让你非常方便的完成内容定制。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--如何对你的服务进行分组?-->
+		<div class="modal fade" id="leadModalG">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">如何对你的服务进行分组?</h4>
+					</div>
+					<div class="modal-body">
+						<p style="text-indent:2em;">当服务变得多起来以后，不同类型的服务你可以对其进行分类。</p>
+						<p style="text-indent:2em;">点击分组卡片上的详情，即可对分组信息进行重新编辑，点击服务管理，还可以添加和移除服务。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--怎样把服务接入你的APP?-->
+		<div class="modal fade" id="leadModalH">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">怎样把服务接入你的APP?</h4>
+					</div>
+					<div class="modal-body">
+						<span style="text-indent:2em;">在汇道上创建的服务都是可以接入到你自己的移动应用上的，比如你的 APP。将我们的文档（链接到文档页面：</span>
+						<a style="text-decoration: none;cursor: pointer;" href="https://218.80.250.91:8443/octopus/views/doc.jsp">https://218.80.250.91:8443/octopus/views/doc.jsp</a>
+						<span>）内容发给你团队的开发人员，根据文档的要求，他们就可以快速的完成服务接入了。</span>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--FAQ 部分modal-->
+
+		<!--如何修改注册信息？-->
+		<div class="modal fade" id="AQModalA">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">如何修改注册信息？</h4>
+					</div>
+					<div class="modal-body">
+						<p style="text-indent: 2em;">登录汇道，右侧导航栏找到渠道商信息/服务商信息，点击编辑按钮，你可以对信息进行修改。需要注意的是，名称和联系人信息不可更改。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--我的服务会被哪些人看到？-->
+		<div class="modal fade" id="AQModalB">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">我的服务会被哪些人看到？</h4>
+					</div>
+					<div class="modal-body">
+						<p style="text-indent: 2em;">在汇道上每个服务都有对应的唯一渠道商，所有注册的服务仅服务创建者和所属的渠道商可见。而等服务接入到移动应用后，就可以面向该应用的全部用户群体。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--启用服务是什么意思？-->
+		<div class="modal fade" id="AQModalC">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">启用服务是什么意思？</h4>
+					</div>
+					<div class="modal-body">
+						<p style="text-indent: 2em;">启用服务是对服务的可用性进行管理，当服务接入到 APP 以后，启用状态的服务即为可用服务，未启用的服务会保留原页面，但不再提供服务。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--组件是什么？我如何使用？-->
+		<div class="modal fade" id="AQModalD">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">组件是什么？我如何使用？</h4>
+					</div>
+					<div class="modal-body">
+						<p style="text-indent: 2em;">组件就像一个个已经打磨好的零部件，可以让你很方便的组装到应用里。汇道目前已提供了数十种覆盖各行业的组件供你使用。当然，如果研发资源充沛，你也可以自行开发。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--如何使用消息推送通道？-->
+		<div class="modal fade" id="AQModalE">
+			<!--fade表示modal弹出时的淡入淡出动画效果-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--X按钮-->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">如何使用消息推送通道？</h4>
+					</div>
+					<div class="modal-body">
+						<p style="color: #337AB7;">1. 使用场景</p>
+						<p style="text-indent: 2em;">服务后台接到客户的消息后，往往不能及时应答，为了应对此种情况，平台提供了“渠道商”客服消息推送通道服务。</p>
+
+						<p style="color: #337AB7;">2. 使用步骤：</p>
+						<p style="text-indent: 1em;">2.1 注册</p>
+						<p style="text-indent: 2em;">需要在注册“渠道商”信息的时候填写“客服消息推送地址”，这个“客服消息推送地址”的存在方式是一个http协议的url连接，后续的服务端客服消息会被推送到这个地址。</p>
+						<p style="text-indent: 1em;">2.2 推送</p>
+						<p style="text-indent: 2em;">平台收到需要推送的客服消息时，会按照一参数定格式post至“客服消息推送地址”，具体的参数包含header、和body二进制流：</p>
+						<ul>
+							<li>头消息参数(会作为post请求中的header部分参数)
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>序号</th>
+											<th>参数名</th>
+											<th>类型</th>
+											<th>释义</th>
+											<th>是否必须</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>sid</td>
+											<td>String</td>
+											<td>服务id</td>
+											<td>是</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>sname</td>
+											<td>String</td>
+											<td>服务名称</td>
+											<td>是</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>msgcontent</td>
+											<td>String</td>
+											<td>推送的消息字符串(概述)</td>
+											<td>是</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>cid</td>
+											<td>String</td>
+											<td>客服消息所推送用户隶属的渠道商id</td>
+											<td>是</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>appkey</td>
+											<td>560001</td>
+											<td>客服消息所推送用户隶属的渠道商appkey</td>
+											<td>是</td>
+										</tr>
+									</tbody>
+								</table>
+							</li>
+							<li>
+								二进制流参数
+								<pre>客服消息数据字符串转换得到的数据流</pre>
+							</li>
+						</ul>
+						<p style="text-indent: 1em;">2.3 反馈</p>
+						<p style="text-indent: 2em;">“客服消息推送地址”服务收到客服消息后(后续可以通过自身消息渠道将消息发送至移动端相关服务)，在成功接收后需要反馈一个成功或失败的字符串给平台。</p>
+						<ul>
+							<li>成功接受反馈：sucess</li>
+							<li>失败反馈：fail</li>
+						</ul>
+						<p style="text-indent: 1em;">2.4 SDK端插入消息</p>
+						<p style="text-indent: 2em;">渠道商通过自身渠道将客服消息推送到移动端，移动端接收到客服消息后，可以调用sdk方法将数据加载进相关的服务内。</p>
+						<p style="text-indent: 2em;">调用方法</p>
+						<pre>/**
+
+* data2.3 保存客服消息
+
+* @param sid 服务的sid
+
+* @param customServiceMsg 客服消息的二进制流转换成的字符串
+
+* @return
+
+*/
+
+public boolean setCustomServiceMessage(String sid,String customServiceMsg)</pre>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<!--end modal-->
+
+		<script src="../js/lib/jquery-1.11.0.min.js"></script>
+		<script src="../js/lib/bootstrap.min.js"></script>
+		<script src="../js/lib/jquery.cookie.js"></script>
+		<script src="../js/common/footer.js"></script>
+		<script src="../js/help.js"></script>
+	</body>
+
+</html>

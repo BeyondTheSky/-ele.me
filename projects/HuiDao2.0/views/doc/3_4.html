@@ -1,0 +1,562 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content="IE=10.000" 
+http-equiv="X-UA-Compatible">
+ <TITLE>octopusopenapi_4_channeldata_20141229_v1</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<STYLE type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</STYLE>
+ 
+<META name="GENERATOR" content="MSHTML 10.00.9200.17183"></HEAD> 
+<BODY>
+<H2>Octopus数据接口OpenApi使用说明</H2>
+<H3>3.4.供“渠道商”调用数据接口</H3>
+<H4>3.4.1	通用header参数</H4>
+<UL>
+  <LI>
+  <P>通用头参数，服务端可以通过以下参数确定使用者的身份及权限</P>
+  <TABLE>
+    <THEAD>
+    <TR>
+      <TH>序号</TH>
+      <TH>参数名</TH>
+      <TH>类型</TH>
+      <TH>释义</TH>
+      <TH>是否必须</TH></TR></THEAD>
+    <TBODY>
+    <TR>
+      <TD>1</TD>
+      <TD>channelid</TD>
+      <TD>String</TD>
+      <TD>渠道商的id</TD>
+      <TD>是</TD></TR>
+    <TR>
+      <TD>2</TD>
+      <TD>appkey</TD>
+      <TD>String</TD>
+      <TD>渠道商的appkey</TD>
+      <TD>是</TD></TR></TBODY></TABLE></LI></UL>
+<H4>3.4.2	获取远端服务列表</H4>
+<UL>
+  <LI>
+  <P>服务地址</P>
+<PRE><CODE>http://&lt;ip&gt;:&lt;port&gt;/channel/client/servicelist/{servicetype}/{pageno}/{pagesize}
+</CODE></PRE></LI>
+  <LI>
+  <P>请求方式</P>
+<PRE><CODE>GET
+</CODE></PRE></LI>
+  <LI>
+  <P>输入参数</P>
+  <TABLE>
+    <THEAD>
+    <TR>
+      <TH>序号</TH>
+      <TH>参数名</TH>
+      <TH>类型</TH>
+      <TH>释义</TH>
+      <TH>是否必须</TH></TR></THEAD>
+    <TBODY>
+    <TR>
+      <TD>1</TD>
+      <TD>servicetype</TD>
+      <TD>String</TD>
+      <TD>获取的服务列表类型(全部、某类型)，全部类型则此参数为all</TD>
+      <TD>是</TD></TR>
+    <TR>
+      <TD>2</TD>
+      <TD>pageno</TD>
+      <TD>String</TD>
+      <TD>需请求的当前页(从0开始)</TD>
+      <TD>否</TD></TR>
+    <TR>
+      <TD>3</TD>
+      <TD>pagesize</TD>
+      <TD>String</TD>
+      <TD>每页的条数</TD>
+      <TD>否</TD></TR></TBODY></TABLE></LI>
+  <LI>
+  <P>输出</P>
+<PRE><CODE>{
+    "services": [
+        {
+            "id": 1,
+            "sId":  "这里是服务id",
+            "dId": "这里是开发者id",
+            "sname": "这里是服务名",
+            "surl": "这里是服务的url入口地址",
+            "simg": "这里是服务图标url",
+            "desripton": "这里是服务描述",
+            "token": "这里是注册服务的时remote提供的token",
+            "createTime": "1\n407291402654",
+            "appId": "这里是appid",
+            "secrityId": "这里是secrityId",
+            "channalid": "渠道商id",
+            "typeid": "分类id",
+            "keyword": "服务关键字"
+
+        }
+    ],
+    "pageInfo": {
+        "pageTotalCount": "这里是总页数",
+        "pageNo": "这里是当前页数，从0开始",
+        "pageSize": "这里是当前分页每页信息条数"
+    },
+    "code": "601" //601是作为服务列表服务返回代码,失败则为404
+    "msg": "错误消息"
+}
+</CODE></PRE></LI></UL>
+<H4>3.4.3	获取服务类型列表</H4>
+<UL>
+  <LI>
+  <P>服务地址</P>
+<PRE><CODE>http://&lt;ip&gt;:&lt;port&gt;/channel/client/typelist/{tid}
+</CODE></PRE></LI>
+  <LI>
+  <P>请求方式</P>
+<PRE><CODE>GET
+</CODE></PRE></LI>
+  <LI>
+  <P>输入参数</P>
+  <TABLE>
+    <THEAD>
+    <TR>
+      <TH>序号</TH>
+      <TH>参数名</TH>
+      <TH>类型</TH>
+      <TH>释义</TH>
+      <TH>是否必须</TH></TR></THEAD>
+    <TBODY>
+    <TR>
+      <TD>1</TD>
+      <TD>tid</TD>
+      <TD>String</TD>
+      <TD>类型id（最大类用all）</TD>
+      <TD>否</TD></TR></TBODY></TABLE></LI>
+  <LI>
+  <P>输出</P>
+<PRE><CODE>{
+    "types": [
+        {
+            "id": 1,
+            "tid": “这里是类型id”,
+            "parentid": "这里分类的父节点id",
+            "tname": "这里是分类名称",
+            "des": "这里是类型描述",
+            "timg": "这里是分类图标",
+            "sub_type": [
+                {
+                    "id": 32768,
+                    "tid": "子类型id",
+                    "parentid": "子类型父节点id",
+                    "tname": "分类名称",
+                    "des": "分类描述",
+                    "timg": "这里是子类型分类图标"
+                },
+                ……
+            ]
+        },
+        ……
+    ],
+    "code": "200",
+    "msg": "错误消息"
+}
+</CODE></PRE></LI></UL>
+<H4>3.4.4	获取服务列表-关键字搜索</H4>
+<UL>
+  <LI>
+  <P>服务地址</P>
+<PRE><CODE>http://&lt;ip&gt;:&lt;port&gt;/channel/client/servicelistbykey/{keyword}
+</CODE></PRE></LI>
+  <LI>
+  <P>请求方式</P>
+<PRE><CODE>GET
+</CODE></PRE></LI>
+  <LI>
+  <P>输入参数</P>
+  <TABLE>
+    <THEAD>
+    <TR>
+      <TH>序号</TH>
+      <TH>参数名</TH>
+      <TH>类型</TH>
+      <TH>释义</TH>
+      <TH>是否必须</TH></TR></THEAD>
+    <TBODY>
+    <TR>
+      <TD>1</TD>
+      <TD>keyword</TD>
+      <TD>String</TD>
+      <TD>搜索关键字，经过UrlEncoder.encode。使用utf-8编码</TD>
+      <TD>是</TD></TR></TBODY></TABLE></LI>
+  <LI>
+  <P>输出</P>
+<PRE><CODE>{
+    "services": [
+        {
+            "id": 1,
+            "sid": "服务id",
+            "dId": "这里是开发者id",
+            "sname": "这里是服务名",
+            "surl": "这里是服务的url入口地址",
+            "simg": "这里是服务图标url",
+            "desripton": "这里是服务描述",
+            "token": "这里是注册服务的时remote提供的token",
+            "createTime": "1\n407291402654",
+            "appId": "这里是appid",
+            "secrityId": "这里是secrityId",
+            "channalid": "渠道商id",
+            "typeid": "分类id",
+            "keyword": "服务关键字"
+
+        }
+    ],
+    "code": "601", //200是作为服务成功返回代码,失败则为404
+    "msg": "错误消息"
+}
+</CODE></PRE></LI></UL>
+<H4>3.4.5	根据服务id和appkey和channelid获取单个服务详情</H4>
+<UL>
+  <LI>
+  <P>服务地址</P>
+<PRE><CODE>http://&lt;ip&gt;:&lt;port&gt;/channel/client/servicedetailbyappkey/{appkey}/{channelid}/{sid}
+</CODE></PRE></LI>
+  <LI>
+  <P>请求方式</P>
+<PRE><CODE>GET
+</CODE></PRE></LI>
+  <LI>
+  <P>输入参数</P>
+  <TABLE>
+    <THEAD>
+    <TR>
+      <TH>序号</TH>
+      <TH>参数名</TH>
+      <TH>类型</TH>
+      <TH>释义</TH>
+      <TH>是否必须</TH></TR></THEAD>
+    <TBODY>
+    <TR>
+      <TD>1</TD>
+      <TD>appkey</TD>
+      <TD>String</TD>
+      <TD>渠道的appkey</TD>
+      <TD>是</TD></TR>
+    <TR>
+      <TD>2</TD>
+      <TD>channelid</TD>
+      <TD>String</TD>
+      <TD>渠道id</TD>
+      <TD>是</TD></TR>
+    <TR>
+      <TD>3</TD>
+      <TD>sid</TD>
+      <TD>String</TD>
+      <TD>服务id</TD>
+      <TD>是</TD></TR></TBODY></TABLE></LI>
+  <LI>
+  <P>输出</P>
+<PRE><CODE>{
+    "service"    {
+        "id": 1,
+        "sid": "服务id",
+        "dId": "这里是开发者id",
+        "sname": "这里是服务名",
+        "surl": "这里是服务的url入口地址",
+        "simg": "这里是服务图标url",
+        "desripton": "这里是服务描述",
+        "token": "这里是注册服务的时remote提供的token",
+        "createTime": "1\n407291402654",
+        "appId": "这里是appid",
+        "secrityId": "这里是secrityId",             
+        "channalid": "渠道商id",
+        "typeid": "分类id",
+        "keyword": "服务关键字"
+     },
+    "code": "200", //200是作为服务成功返回代码,失败则为404
+    "msg": "错误消息"
+}
+</CODE></PRE></LI></UL></BODY></HTML><!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

@@ -1,0 +1,29 @@
+.doc-content{
+	width: 750px;
+	height: auto;
+	position: relative;
+	left: 400px;
+	top: -330px;
+	font-size: 9px;
+	font-family:"Microsoft YaHei";
+}
+
+.doc_header_f{
+	font-size: 18px;
+	color:black;
+	font-family:"Microsoft YaHei";
+}
+
+.doc_header_s{
+	font-size: 16px;
+	color:black;
+	font-family:"Microsoft YaHei";
+}
+.doc_leaf{
+	font-size: 14px;
+	color:black;
+	font-family:"Microsoft YaHei";
+}
+.doc_selected{
+	background-color: #94a0b4;
+}

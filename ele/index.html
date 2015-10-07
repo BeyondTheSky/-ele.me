@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>饿了么－重构</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/importFonts.css" />
+	</head>
+
+	<body>
+		<header class="ele-header">
+			<div class="width-control">
+				<a href="#" class="header-left header-item header-item-active">首页</a>
+				<a href="#" class="header-left header-item">品牌商家</a>
+				<a href="#" class="header-left header-item">我的订单</a>
+				<div style="height: 60px;float: right;">
+					<a href="#" class="header-right header-item">积分商城</a>
+					<a href="#" class="header-right header-item">服务中心</a>
+					<a href="#" class="header-right header-item">手机应用</a>
+					<div class="about-user">
+						<span></span>
+						<span>
+						<a href="#">登录</a>
+						/
+						<a href="#">注册</a>
+					</span>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="main-container width-control">
+			<!--当前位置和搜索框-->
+			<div style="height: 54px;">
+				<div class="search-input">
+					<a class="glyphicon glyphicon-search"></a>
+					<input type="text" placeholder="搜索商家,美食..." />
+				</div>
+				
+				<div class="location">
+					<span>当前位置：</span>
+					<span class="locaation-name">
+						<a href="#">四川成都（电子科技大学）哈哈哈哈哈</a>
+					</span>
+					<a href="#">[切换地址]</a>
+				</div>
+			</div>
+			<!--图片轮播-->
+			<div></div>
+			<!--导航栏-->
+			<div class="nav-tab">
+				<a href="#" class="nav-tab-item nav-tab-item-active">外卖商家</a>
+				<a href="#" class="nav-tab-item">购买过的商家</a>
+				<a href="#" class="nav-tab-item">附近的团购</a>
+			</div>
+			<!--"外卖商家"－主题部分-->
+			<div>
+				<!--条件筛选框-->
+				<div class="choose">
+					<div class="choose-line1">
+
+					</div>
+					<div class="choose-line line-1">
+						<span>商家分类：</span>
+						<a href="#" class="">全部商家</a>
+						<a href="#">品牌商家</a>
+						<a href="#">快餐类</a>
+						<a href="#">正餐类</a>
+						<a href="#">小吃零食</a>
+						<a href="#">甜品饮品</a>
+					</div>
+					<div class="choose-line line-2">
+						<span>优惠活动：</span>
+						<a href="#" class="">全部商家</a>
+						<a href="#">新用户优惠</a>
+						<a href="#">特价秒杀</a>
+						<a href="#">下单立减</a>
+						<a href="#">赠品优惠</a>
+						<a href="#">专享红包</a>
+						<a href="#">支持抵价券</a>
+					</div>
+					<div class="choose-line-tip">
+						<div class="choose-tip-left">
+							<a href="#">默认排序</a>
+							<a href="#">销量</a>
+							<a href="#">评价</a>
+							<div style="float: left;">
+								<div class="select-input">
+									<ul class="sort">
+										<li class="one">
+											<a>其他排序</a>
+											<ul class="sort-two">
+												<li>配送速度</li>
+												<li>起送金额</li>
+												<li>新开商家</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div style="float: left;margin-left: 96px;">
+								<div class="select-input">
+									<ul class="sort">
+										<li class="one">
+											<a>起送价格</a>
+											<ul class="sort-two">
+												<li>不限</li>
+												<li>15元以下</li>
+												<li>20元以下</li>
+												<li>30元以下</li>
+												<li>40元以下</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="choose-tip-right">
+							<label>
+								<input type="checkbox" /> 免配送费
+							</label>
+							<label>
+								<input type="checkbox" /> 饿配送
+							</label>
+							<label>
+								<input type="checkbox" /> 可开发票
+							</label>
+							<label>
+								<input type="checkbox" /> 在线支付
+							</label>
+						</div>
+					</div>
+				</div>
+				<!--tip栏-->
+				<div class="around-tips">
+					<span>想吃好点，看看附近</span>
+					<span class="is-var">233 家</span>
+					<span>品牌商家吧，</span>
+					<a href="#">立即查看</a>
+				</div>
+				<!--card-list-->
+				<div class="card-list">
+					<div class="card card-width">
+						<div class="card-pic">
+							<img class="card-main-pic" src="img/test.jpeg" />
+							<span>45 分钟</span>
+							<div class="card-add1"></div>
+							<img class="card-add2" src="img/icon1.png" alt="通过营业资质认证" />
+						</div>
+						<div class="card-main">
+							<h3 class="card-main-title">这里是汉堡君的标题需要超长超过长度限制</h3>
+							<div class="card-main-star">这些是star 哈～</div>
+							<span class="card-main-sales">月销999份</span>
+							<p class="card-main-waypay">25元起送/配送费7元</p>
+							<div class="card-main-activity">
+								<p style="background:#CC22E2;">减</p>
+								<p style="background: #52AF27;">抵</p>
+							</div>
+						</div>
+					</div>
+					<div class="card card-width">
+						<div class="card-pic">
+							<img class="card-main-pic" src="img/test.jpeg" />
+							<span>45 分钟</span>
+							<div class="card-add1"></div>
+							<img class="card-add2" src="img/icon1.png" alt="通过营业资质认证" />
+						</div>
+						<div class="card-main">
+							<h3 class="card-main-title">这里是汉堡君的标题需要超长超过长度限制</h3>
+							<div class="card-main-star">这些是star 哈～</div>
+							<span class="card-main-sales">月销999份</span>
+							<p class="card-main-waypay">25元起送/配送费7元</p>
+							<div class="card-main-activity">
+								<p style="background:#CC22E2;">减</p>
+								<p style="background: #52AF27;">抵</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card card-width">
+						<div class="card-pic">
+							<img class="card-main-pic" src="img/test.jpeg" />
+							<span>45 分钟</span>
+							<div class="card-add1"></div>
+							<img class="card-add2" src="img/icon1.png" alt="通过营业资质认证" />
+						</div>
+						<div class="card-main">
+							<h3 class="card-main-title">这里是汉堡君的标题需要超长超过长度限制</h3>
+							<div class="card-main-star">这些是star 哈～</div>
+							<span class="card-main-sales">月销999份</span>
+							<p class="card-main-waypay">25元起送/配送费7元</p>
+							<div class="card-main-activity">
+								<p style="background:#CC22E2;">减</p>
+								<p style="background: #52AF27;">抵</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card card-width">
+						<div class="card-pic">
+							<img class="card-main-pic" src="img/test.jpeg" />
+							<span>45 分钟</span>
+							<div class="card-add1"></div>
+							<img class="card-add2" src="img/icon1.png" alt="通过营业资质认证" />
+						</div>
+						<div class="card-main">
+							<h3 class="card-main-title">这里是汉堡君的标题需要超长超过长度限制</h3>
+							<div class="card-main-star">这些是star 哈～</div>
+							<span class="card-main-sales">月销999份</span>
+							<p class="card-main-waypay">25元起送/配送费7元</p>
+							<div class="card-main-activity">
+								<p style="background:#CC22E2;">减</p>
+								<p style="background: #52AF27;">抵</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<footer class="ele-footer width-control ">
+			<div class="clear">
+				<div class="footer-left">
+					<h3>用帮助户</h3>
+					<a href="#">服务中心</a>
+					<a href="#">常见问题</a>
+					<a href="#">在线客服</a>
+				</div>
+				<div class="footer-left">
+					<h3>商务合作</h3>
+					<a href="#">我要开店</a>
+					<a href="#">加盟指南</a>
+					<a href="#">市场合作</a>
+				</div>
+				<div class="footer-left">
+					<h3>关于我们</h3>
+					<a href="#">饿了么介绍</a>
+					<a href="#">加入我们</a>
+					<a href="#">联系我们</a>
+					<a href="#">服务协议</a>
+				</div>
+				<div class="footer-left2">
+					<p>24小时客服热线 : 10105757</p>
+					<p>意见反馈 : </p>
+					<a href="mailto:feedback@ele.me">feedback@ele.me</a>
+					<div class="be-our-funs">
+						<span>关注我们:</span>
+						<a href="#">微信</a>
+						<a href="#">微博</a>
+						<a href="#">人人</a>
+					</div>
+				</div>
+
+				<div class="footer-right">
+					<a href="#">
+						<img src="img/app.png" alt="饿了么app应用" />
+					</a>
+					<div class="footer-right-content">
+						<h2>下载手机版</h2>
+						<p>扫一扫，手机订餐更方便</p>
+						<a href="#">iPhone</a>
+						<a href="#">Android</a>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+
+</html>

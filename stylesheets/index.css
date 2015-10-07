@@ -1,0 +1,315 @@
+/*By 金徐明
+ * QQ:709298562
+ * E-mail:fly_fish_jxm@163.com
+ * */
+
+
+/*变更信息：
+ *2015-6: 创建
+ *2015-7：优化重整 
+ * */
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+
+/*公共部分 CSS*/
+
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.my-container {
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+
+h1 {
+  font-size:50px;
+}
+
+.divider {
+	height:50px;
+}
+
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+section {
+  color: #ffffff;
+  min-height: 400px;
+  height: auto !important;
+  height: 100%;
+  padding-top:100px;
+}
+
+/*header CSS*/
+/*
+.carousel-caption {
+  z-index: 10;
+}
+
+.my-carousel  .item {
+  height: 600px;
+  background-color:#bbb;
+}
+.my-carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  max-height: 600px;
+}
+
+.logo {
+  font-size:50px;
+  position:absolute;
+  z-index:1200;
+  color:#333;
+  top:130px;
+  text-align:center;
+  width:100%;
+}
+*/
+
+/*巨幕 CSS*/
+.jumbotron{
+	background-image:url(../images/index/bg.jpg);
+	background-size: cover;
+	min-height: 424px;
+}
+
+.jumbotron-head{
+	margin:150px 15% 120px 15%;
+}
+
+.jumbotron-head h2{
+	font-size: 45px;
+  line-height: 56px;
+  font-weight: 300;
+  color: #F2F3F2;
+}
+
+.jumbotron-head p{
+	color: #F2F3F2;
+}
+
+/*Nav CSS*/
+.my-nav {
+	width: 100%;
+	position: static;
+	top: -32px;
+	background-color: #2e2e2e;
+	font-weight: 700;
+	text-transform: uppercase;//英文小写转大写
+	border-width: 0;//无边
+}
+
+.my-nav li>a:hover{
+	background-color: #000;
+}
+
+.navbar-nav {
+  margin: 1px 1px; 
+}  
+
+.my-nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .3s ease-in-out;
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+  
+.my-container > .container {
+  padding: 60px 15px 0;
+}
+
+.container .credit {
+  margin: 20px 0;
+}
+
+.navbar-collapse.in { 
+    overflow-y: visible;
+}
+
+.navbar-toggle {
+	outline:0;
+}
+
+
+/*Home CSS*/
+.bg-1 {
+	background: url(../images/index/bg_blueplane.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+/*Profile CSS*/
+.bg-3 {
+	background: url(../images/index/bg_suburb.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.my-story {
+	padding: 20px;
+	background-color: rgba(5, 5, 5, 0.8);
+	border-radius: 2px;
+}
+
+.my-profile p{
+	padding-right: 38%;
+	font-size: 15px;
+}
+.more-profile{
+	margin-top: 10px;
+}
+
+/*Projects CSS*/
+.bg-4 {
+	padding-top:30px;
+    background-color:#e6e6e6;
+}
+
+.panel {
+	border-width:0;
+}
+
+.panel .img-responsive {
+	min-height:270px;
+    max-height:270px;
+}
+
+.my-btn{
+	line-height: 1;
+	border-radius: 2px;
+	float: right;
+}
+
+.my-projects{
+	padding: 20px;
+	background-color: rgba(56, 55, 55, 0.8);
+	border-radius: 2px;
+}
+
+/*Location CSS*/
+
+
+/*Contact CSS*/
+.my-contact{
+	font-size: 18px;
+}
+
+.my-contact a{
+	text-decoration: none;
+}
+
+.overflow {
+	overflow: hidden;
+}
+.sina-info {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-image: url(../images/index/social@2x.png);
+	border-radius: 26px;
+	margin-right: 15px;
+	background-size: 130px 26px;
+	cursor: pointer;
+	background-position: 0px 0px;
+}
+.weixin-info {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-image: url(../images/index/social@2x.png);
+	border-radius: 26px;
+	margin-right: 15px;
+	background-size: 130px 26px;
+	cursor: pointer;
+	background-position: -52px 0px;
+} 
+.qq-info {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-image: url(../images/index/social@2x.png);
+	border-radius: 26px;
+	margin-right: 15px;
+	background-size: 130px 26px;
+	cursor: pointer;
+	background-position: -26px 0px;
+} 
+.email-info {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-image: url(../images/index/social@2x.png);
+	border-radius: 26px;
+	margin-right: 15px;
+	background-size: 130px 26px;
+	cursor: pointer;
+	background-position: -104px 0px;
+}
+
+/*Footer CSS*/
+.my-footer {
+  height: 60px;
+  background-color:#414141;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.my-footer p{
+	font-size: 16px;
+}
+
+/*Scroll CSS*/
+.scroll-top {
+   position:fixed;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #f2f3f2;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+  color:#222;
+} 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

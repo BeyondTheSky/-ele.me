@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JinXM | 博客</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="../../css/style.css" type="text/css">
+	</head>
+
+	<body>
+		<div id="container">
+			<div class="left-col">
+				<div class="overlay"></div>
+				<div class="intrude-less">
+					<header id="header" class="inner">
+						<a href="http://jinxm.digitcv.com/#/resume" class="profilepic">
+
+							<img src="../../img/my_logo.jpg" class="js-avatar show">
+
+						</a>
+
+						<hgroup>
+							<h1 class="header-author"><a href="http://jinxm.digitcv.com/#/resume">金徐明</a></h1>
+						</hgroup>
+
+						<p class="header-subtitle">UESTC/Coder</p>
+
+						<div class="switch-btn">
+							<div class="icon">
+								<div class="icon-ctn">
+									<a href="#" class="icon-wrap icon-house">
+										<div class="birdhouse"></div>
+										<div class="birdhouse_holes"></div>
+									</a>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="switch-area">
+							<div class="switch-wrap">
+								<section class="switch-part switch-part1">
+									<nav class="header-menu">
+										<ul>
+
+											<li><a href="http://jinxm.github.io/">个人主页</a>
+											</li>
+
+											<li><a href="http://www.weibo.com/kiwi1993an/profile?rightmod=1&wvr=6&mod=personinfo">微博</a>
+											</li>
+
+											<li><a href="../../../MyProjects/Projects.html">Project</a>
+											</li>
+
+											<li><a href="https://github.com/JinXM">Github</a>
+											</li>
+
+											<li><a href="http://jinxm.digitcv.com/#/resume">Profile</a>
+											</li>
+
+										</ul>
+									</nav>
+
+								</section>
+
+							</div>
+						</div>
+					</header>
+				</div>
+			</div>
+			<div class="mid-col">
+				<nav id="mobile-nav">
+					<div class="overlay">
+						<h1 class="header-author js-mobile-header hide">金徐明</h1>
+					</div>
+					<div class="intrude-less">
+						<header id="header" class="inner">
+							<div class="profilepic">
+
+								<img src="../../img/my_logo.jpg" class="js-avatar show">
+
+							</div>
+							<hgroup>
+								<h1 class="header-author">金徐明</h1>
+							</hgroup>
+
+							<p class="header-subtitle">UESTC/Coder</p>
+
+							<nav class="header-menu">
+								<ul>
+
+									<li><a href="http://jinxm.github.io/">个人主页</a>
+									</li>
+
+									<li><a href="http://www.weibo.com/kiwi1993an/profile?rightmod=1&wvr=6&mod=personinfo">微博</a>
+									</li>
+
+									<li><a href="../../../MyProjects/Projects.html">Project</a>
+											</li>
+
+									<li><a href="https://github.com/JinXM">Github</a>
+									</li>
+
+									<li><a href="http://jinxm.digitcv.com/#/resume">Profile</a>
+									</li>
+
+									<div class="clearfix"></div>
+								</ul>
+							</nav>
+						</header>
+					</div>
+				</nav>
+				<div class="body-wrap">
+
+					<!--博客列表brgin  article为一个单位-->
+
+					<article id="post-hack-in-localstorage" class="article article-type-post" itemscope itemprop="blogPost">
+
+						<div class="article-meta">
+							<time>2014.11</time>
+						</div>
+
+						<div class="article-inner">
+
+							<input type="hidden" class="isFancy" />
+
+							<header class="article-header">
+								<h1 itemprop="name">
+      								<a class="article-title" href="#">Android—如何制作类似于微信的开场画面</a>
+    							</h1>
+							</header>
+
+							<div class="article-info article-info-post">
+
+
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="article-entry" itemprop="articleBody">
+								
+								<p>很多Android应用都有个开场画面，具体就是打开应用后再经过n毫秒自动进入主界面。</p>
+								<p>这个有很多用途<br>比如作产品主题宣传<br>大的应用可以放置广告<br>总之用处很多</p>
+								
+								<p>先来看看微信的开场画面吧（如下图），打开微信应用后再经过n毫秒自动进入微信主界面。</p>
+								<img  src="img/weixin-min.jpg" style="width: 270px;height: 480px;margin: auto;"/>
+
+								<p>怎么实现呢，其实很简单。关键是用好Handler.postDelayed(Runnable r,long delayMillis)这个函数。那么，先看看这个函数的api文档吧：</p>
+								<pre>
+boolean android.os.Handler.postDelayed(Runnable r, long delayMillis)
+
+public final boolean postDelayed (Runnable r, long delayMillis) 
+Added in API level 1
+Causes the Runnable r to be added to the message queue, to be run after the specified amount of time elapses. The runnable will be run on the thread to which this handler is attached.
+
+Parameters
+r  The Runnable that will be executed. 
+delayMillis  The delay (in milliseconds) until the Runnable will be executed. 
+
+Returns
+Returns true if the Runnable was successfully placed in to the message queue. Returns false on failure, usually because the looper processing the message queue is exiting. Note that a result of true does not mean the Runnable will be processed -- if the looper is quit before the delivery time of the message occurs then the message will be dropped. 
+								</pre>
+								<p>
+									从文档里我们可以看到：这个函数的主要功能是延迟delayMillis这么长的时间后再执行Runnable r事件。所以很顺理成章我们可以这样想：在Runable r事件里有一个intent，负责从当前界面（开场画面）跳转到程序主界面，而开场画面持续多长时间，则是由long delayMillis这个参数决定。
+								</p>
+								<p>下边是博主写的一个很简单的例子：</p>
+								<pre>
+package com.example.dingpiao;
+
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v4.app.Fragment;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.os.Build;
+
+//这是开场动画的java文件
+public class MainActivity extends ActionBarActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		//Handler().postDelayed 函数是延迟2500毫秒后执行Runable函数
+		new Handler().postDelayed(new Runnable() {  
+			  
+            @Override  
+            public void run() {  
+                Intent intent = new Intent(MainActivity.this, first.class);  
+                startActivity(intent);  
+                MainActivity.this.finish();  
+            }  
+        }, 2500);  
+	}
+}
+								</pre>
+								<p>运行效果就是：打开app在该界面停留2500毫秒后跳转到主界面，该Activity的生命周期结束。</p>
+							</div>
+
+						</div>
+
+					</article>
+
+					<!--end 博客列表-->
+				</div>
+			</div>
+
+			<link rel="stylesheet" href="../../css/jquery.fancybox.css" type="text/css">
+			<script src="../../../../javascripts/lib/jquery-1.11.0.min.js" type="text/javascript"></script>
+			<script src="../../js/main.js" type="text/javascript"></script>
+
+		</div>
+	</body>
+
+</html>

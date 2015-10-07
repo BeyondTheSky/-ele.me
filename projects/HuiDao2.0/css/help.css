@@ -1,0 +1,61 @@
+.help-main {
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+}
+/*Search CSS*/
+
+.help-search {
+	width: 100%;
+	height: 570px;
+	background-image: url(../img/newWebpage/help_part1_bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.help-search p{
+	width: 50%;
+	margin: 20px auto;
+	font-size: 18px;
+}
+
+.search-input {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.search-btn {
+	height: 34px;
+}
+
+
+.help_icon img{
+	margin: 20px auto;
+	
+}
+/* A&Q CSS*/
+.question p{
+	margin-top: 15px;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.question p:hover{
+	color: #6CACEE;
+}
+
+.for-more-help{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.for-more-help a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.question img{
+	width:120px;
+	height:90px;
+	margin-bottom:15px;
+}

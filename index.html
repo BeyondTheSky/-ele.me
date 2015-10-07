@@ -1,275 +1,415 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
-		<meta charset="utf-8" />
-		<title>饿了么－重构</title>
-		<link rel="stylesheet" href="css/index.css" />
-		<link rel="stylesheet" href="css/importFonts.css" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>JinXM</title>
+		<link href="stylesheets/lib/bootstrap.min.css" rel="stylesheet">
+		<link href="stylesheets/index.css" rel="stylesheet">
 	</head>
 
 	<body>
-		<header class="ele-header">
-			<div class="width-control">
-				<a href="#" class="header-left header-item header-item-active">首页</a>
-				<a href="#" class="header-left header-item">品牌商家</a>
-				<a href="#" class="header-left header-item">我的订单</a>
-				<div style="height: 60px;float: right;">
-					<a href="#" class="header-right header-item">积分商城</a>
-					<a href="#" class="header-right header-item">服务中心</a>
-					<a href="#" class="header-right header-item">手机应用</a>
-					<div class="about-user">
-						<span></span>
-						<span>
-						<a href="#">登录</a>
-						/
-						<a href="#">注册</a>
-					</span>
-					</div>
-				</div>
-			</div>
 
-		</header>
+		<div id="wrap" class="my-container">
 
-		<div class="main-container width-control">
-			<!--当前位置和搜索框-->
-			<div style="height: 54px;">
-				<div class="search-input">
-					<a class="glyphicon glyphicon-search"></a>
-					<input type="text" placeholder="搜索商家,美食..." />
-				</div>
-				
-				<div class="location">
-					<span>当前位置：</span>
-					<span class="locaation-name">
-						<a href="#">四川成都（电子科技大学）哈哈哈哈哈</a>
-					</span>
-					<a href="#">[切换地址]</a>
-				</div>
-			</div>
-			<!--图片轮播-->
-			<div></div>
-			<!--导航栏-->
-			<div class="nav-tab">
-				<a href="#" class="nav-tab-item nav-tab-item-active">外卖商家</a>
-				<a href="#" class="nav-tab-item">购买过的商家</a>
-				<a href="#" class="nav-tab-item">附近的团购</a>
-			</div>
-			<!--"外卖商家"－主题部分-->
-			<div>
-				<!--条件筛选框-->
-				<div class="choose">
-					<div class="choose-line1">
+			<!--
+				By 金徐明
+				QQ:709298562
+				E-mail:fly_fish_jxm@163.com
+			-->
 
-					</div>
-					<div class="choose-line line-1">
-						<span>商家分类：</span>
-						<a href="#" class="">全部商家</a>
-						<a href="#">品牌商家</a>
-						<a href="#">快餐类</a>
-						<a href="#">正餐类</a>
-						<a href="#">小吃零食</a>
-						<a href="#">甜品饮品</a>
-					</div>
-					<div class="choose-line line-2">
-						<span>优惠活动：</span>
-						<a href="#" class="">全部商家</a>
-						<a href="#">新用户优惠</a>
-						<a href="#">特价秒杀</a>
-						<a href="#">下单立减</a>
-						<a href="#">赠品优惠</a>
-						<a href="#">专享红包</a>
-						<a href="#">支持抵价券</a>
-					</div>
-					<div class="choose-line-tip">
-						<div class="choose-tip-left">
-							<a href="#">默认排序</a>
-							<a href="#">销量</a>
-							<a href="#">评价</a>
-							<div style="float: left;">
-								<div class="select-input">
-									<ul class="sort">
-										<li class="one">
-											<a>其他排序</a>
-											<ul class="sort-two">
-												<li>配送速度</li>
-												<li>起送金额</li>
-												<li>新开商家</li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div style="float: left;margin-left: 96px;">
-								<div class="select-input">
-									<ul class="sort">
-										<li class="one">
-											<a>起送价格</a>
-											<ul class="sort-two">
-												<li>不限</li>
-												<li>15元以下</li>
-												<li>20元以下</li>
-												<li>30元以下</li>
-												<li>40元以下</li>
-											</ul>
-										</li>
-									</ul>
+			<!--
+				变更信息：
+				2015-6: 创建
+				2015-7：优化重整
+			-->
+
+			<!--使用Bootstrap的Carousel插件作为header部分-->
+			<!--<header>
+				<div id="myCarousel" class="carousel slide my-carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+					
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="images/index/sea.jpg">
+							<div class="container">
+								<div class="carousel-caption">
+									<h2>生活握在自己手里</h2>
+									<p></p>
 								</div>
 							</div>
 						</div>
-						<div class="choose-tip-right">
-							<label>
-								<input type="checkbox" /> 免配送费
-							</label>
-							<label>
-								<input type="checkbox" /> 饿配送
-							</label>
-							<label>
-								<input type="checkbox" /> 可开发票
-							</label>
-							<label>
-								<input type="checkbox" /> 在线支付
-							</label>
+						<div class="item">
+							<img src="images/index/green.jpg">
+							<div class="container">
+								<div class="carousel-caption">
+									<h2>只要相信</h2>
+									<p></p>
+								</div>
+							</div>
 						</div>
+						<div class="item">
+							<img src="images/index/night.jpg">
+							<div class="container">
+								<div class="carousel-caption">
+									<h2> 没有什么不可能</h2>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="logo" id="headerWord">Nice to meet you | JinXM</div>
+					
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					</a>
+				</div>
+			</header>-->
+
+			<!--巨幕-->
+			<div class="jumbotron">
+				<div class="container text-center">
+					<div class="jumbotron-head">
+						<h2>Nice to meet you | JinXM</h2>
+						<p>生活握在自己手中，只要相信，没有什么不可能.</p>
 					</div>
 				</div>
-				<!--tip栏-->
-				<div class="around-tips">
-					<span>想吃好点，看看附近</span>
-					<span class="is-var">233 家</span>
-					<span>品牌商家吧，</span>
-					<a href="#">立即查看</a>
+			</div>
+
+			<!--Nav导航条  使用锚点进行页面内跳转-->
+			<div class="navbar navbar-custom navbar-inverse navbar-static-top my-nav" id="nav">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav nav-justified">
+							<li><a href="#HOME">Home</a>
+							</li>
+							<li><a href="#PROFILE">Profile</a>
+							</li>
+							<li class="dropdown">
+								<a href="#PROJECTS">Projects </a>
+							</li>
+							<li><a href="#BLOG">Blog</a>
+							</li>
+							<li><a href="#CONTACT">CONTACT</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<!--card-list-->
-				<div class="card-list">
-					<div class="card card-width">
-						<div class="card-pic">
-							<img class="card-main-pic" src="img/test.jpeg" />
-							<span>45 分钟</span>
-							<div class="card-add1"></div>
-							<img class="card-add2" src="img/icon1.png" alt="通过营业资质认证" />
-						</div>
-						<div class="card-main">
-							<h3 class="card-main-title">这里是汉堡君的标题需要超长超过长度限制</h3>
-							<div class="card-main-star">这些是star 哈～</div>
-							<span class="card-main-sales">月销999份</span>
-							<p class="card-main-waypay">25元起送/配送费7元</p>
-							<div class="card-main-activity">
-								<p style="background:#CC22E2;">减</p>
-								<p style="background: #52AF27;">抵</p>
-							</div>
-						</div>
-					</div>
-					<div class="card card-width">
-						<div class="card-pic">
-							<img class="card-main-pic" src="img/test.jpeg" />
-							<span>45 分钟</span>
-							<div class="card-add1"></div>
-							<img class="card-add2" src="img/icon1.png" alt="通过营业资质认证" />
-						</div>
-						<div class="card-main">
-							<h3 class="card-main-title">这里是汉堡君的标题需要超长超过长度限制</h3>
-							<div class="card-main-star">这些是star 哈～</div>
-							<span class="card-main-sales">月销999份</span>
-							<p class="card-main-waypay">25元起送/配送费7元</p>
-							<div class="card-main-activity">
-								<p style="background:#CC22E2;">减</p>
-								<p style="background: #52AF27;">抵</p>
-							</div>
-						</div>
+			</div>
+
+			<!--Home 部分-->
+			<div class="divider" id="HOME"></div>
+
+			<div class="container">
+				<div class="col-sm-10 col-sm-offset-1">
+					<div class="page-header text-center">
+						<h1>你好 我是金徐明</h1>
 					</div>
 
-					<div class="card card-width">
-						<div class="card-pic">
-							<img class="card-main-pic" src="img/test.jpeg" />
-							<span>45 分钟</span>
-							<div class="card-add1"></div>
-							<img class="card-add2" src="img/icon1.png" alt="通过营业资质认证" />
-						</div>
-						<div class="card-main">
-							<h3 class="card-main-title">这里是汉堡君的标题需要超长超过长度限制</h3>
-							<div class="card-main-star">这些是star 哈～</div>
-							<span class="card-main-sales">月销999份</span>
-							<p class="card-main-waypay">25元起送/配送费7元</p>
-							<div class="card-main-activity">
-								<p style="background:#CC22E2;">减</p>
-								<p style="background: #52AF27;">抵</p>
+					<p class="lead text-center">
+						欢迎来到我的个人主页。该网页主要使用Bootstrap框架。
+					</p>
+					<div style="width: 100%;" class="text-center">
+						<a class="text-center" href="https://github.com/JinXM/JinXM.github.io">
+							<button type="button" class="btn btn-default">Github</button>
+						</a>
+					</div>
+					
+
+					<hr>
+
+					<div class="divider"></div>
+
+				</div>
+			</div>
+
+			<div class="divider"></div>
+
+			<section class="bg-1">
+				<div class="col-sm-6 col-sm-offset-3 text-center">
+					<h2 class="my-story">My Story</h2>
+				</div>
+			</section>
+
+			<!--PROFILE 部分-->
+			<div class="divider" id="PROFILE"></div>
+
+			<div class="row my-profile">
+				<div class="col-sm-10 col-sm-offset-1">
+					<h1>Profile</h1>
+
+					<hr>
+
+					<p>
+						Hi,I'm 金徐明
+					</p>
+					<p>
+						电子科大软件工程的码农~
+					</p>
+					<p>
+						加入过LUG俱乐部，和大神们一起(抱)捣(大)腾(腿)CentOS和Ubuntu...也自学过Android开发，在老师的指导下折腾了几个小应用，在长虹实习正式写过那么一小点安卓功能模块...
+					</p>
+					<p>
+						然而，这一切并不影响我现在疯狂喜欢上前端~Duang
+					</p>
+					<p>
+						5个月前，在实习公司写出第一个自己真正意义上的网页，到现在已经写了四五个项目的前端。虽然水平还处于登堂未入室的阶段，但从一步步自学html、css到Js、Json、AJAX，再到使用Jquery、Bootstrap、AngularJS等框架，到现在正在学习的NodeJS，我能感受到自己进步。
+					</p>
+					<p>
+						我期待在接下来的一年半里，能将自身的水平提高到一个较高的层次。
+					</p>
+					<p>
+						我的远期目标：在github上contribute一个自己的前端框架。
+					</p>
+
+					<a href="http://jinxm.digitcv.com/#/resume">
+						<input type="button" class="btn btn-primary more-profile" value="了解更多" />
+					</a>
+
+					<hr>
+
+					<div class="divider"></div>
+
+				</div>
+			</div>
+
+			<div class="divider"></div>
+
+			<section class="bg-3">
+				<div class="col-sm-6 col-sm-offset-3 text-center">
+					<h2 class="my-projects">What I have done</h2>
+				</div>
+			</section>
+
+			<!--PROJECTS 部分-->
+			<div class="divider" id="PROJECTS"></div>
+
+			<div class="bg-4">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 col-xs-6">
+
+							<div class="panel panel-default">
+								<div class="panel-thumbnail">
+									<a href="#" title="移动医疗管理平台">
+										<img src="images/index/MobileMedical.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="panel-body">
+									<span>移动医疗管理平台</span>
+									<a href="#">
+										<button class="btn btn-default my-btn">see it</button>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="card card-width">
-						<div class="card-pic">
-							<img class="card-main-pic" src="img/test.jpeg" />
-							<span>45 分钟</span>
-							<div class="card-add1"></div>
-							<img class="card-add2" src="img/icon1.png" alt="通过营业资质认证" />
-						</div>
-						<div class="card-main">
-							<h3 class="card-main-title">这里是汉堡君的标题需要超长超过长度限制</h3>
-							<div class="card-main-star">这些是star 哈～</div>
-							<span class="card-main-sales">月销999份</span>
-							<p class="card-main-waypay">25元起送/配送费7元</p>
-							<div class="card-main-activity">
-								<p style="background:#CC22E2;">减</p>
-								<p style="background: #52AF27;">抵</p>
+						<div class="col-sm-4 col-xs-6">
+
+							<div class="panel panel-default">
+								<div class="panel-thumbnail">
+									<a href="http://10.1.30.9:7080/MobileMedical/login" title="八爪鱼平台">
+										<img src="images/index/Octopus.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="panel-body">
+									<span>八爪鱼平台</span>
+									<a href="http://manage.huidao168.com/octopus_manage/channel">
+										<button class="btn btn-default my-btn">see it</button>
+									</a>
+
+								</div>
 							</div>
 						</div>
+
+						<div class="col-sm-4 col-xs-6">
+
+							<div class="panel panel-default">
+								<div class="panel-thumbnail">
+									<a href="" title="汇道">
+										<img src="images/index/huidaomini.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="panel-body">
+									<span>汇道</span>
+									<a href="/projects/HuiDao2.0/views/home.html">
+										<button class="btn btn-default my-btn">see it</button>
+									</a>
+
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-sm-4 col-xs-6">
+
+							<div class="panel panel-default">
+								<div class="panel-thumbnail">
+									<a href="#" title="MORE">
+										<img src="images/index/F2F2F2.png" class="img-responsive">
+									</a>
+								</div>
+								<div class="panel-body">
+									<span>查看更多</span>
+									<a href="/projects/MyProjects/Projects.html">
+										<button class="btn btn-default my-btn">see more</button>
+									</a>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!--BLOG 部分-->
+			<div class="divider" id="BLOG"></div>
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-1">
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-10 col-sm-offset-1">
+					<h1>Blog</h1>
+					<hr/>
+					<div class="col-sm-6 pull-left" style="font-size: 16px;">
+						<p>做过很多笔记，写过很多实验报告和论文</p>
+						<p>却有着一个很坏的习惯：不爱写博客!</p>
+						<p>其实也曾在CSDN上写过一段时间，却没能坚持下来</p>
+						<p>但程序员真应该写博客的。于是乎，前不久决定要长久的写点博客，即使只有只言片语也好~</p>
+						<a href="/projects/MyBlog/BlogIndex.html">
+							<input type="button" class="btn btn-primary more-profile" value="My Blog" />
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+			<!--CONTACT 部分-->
+			<div class="divider" id="CONTACT"></div>
+
+			<div class="row">
+
+				<div class="col-sm-10 col-sm-offset-1">
+					<h1>Contact Me</h1>
+					<hr/>
+					<div class="col-sm-3 my-contact">
+
+						<address>
+              <strong>地址：</strong><br>
+        <span id="map-input">
+        四川成都市一环路东一段<br>
+        电子科技大学沙河校区欣村5栋</span><br>
+      </address>
+
+						<address>
+        <strong>个人联系方式：</strong><br>
+        <a href="mailto:#">fly_fish_jxm@163.com</a>
+        <p>18516101794</p>
+      </address>
+					</div>
+				</div>
+
+			</div>
+
+			<!--<div class="row">
+
+				<hr>
+
+				<div class="col-sm-9 col-sm-offset-1">
+
+					<div class="row form-group">
+						<div class="col-md-12">
+							<h1>Contact Me</h1>
+						</div>
+
 					</div>
 
+				</div>
+-->
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-32 overflow">
+					<div class="text-center">
+						<a class="sina-info" href="http://weibo.com/kiwi1993an/profile?rightmod=1&wvr=6&mod=personinfo"></a>
+						<a class="qq-info" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<p>扫一扫加微信</p><img src='images/index/mmqrcode1433128815432.png' style='width: 100px;height: 100px;' />"></a>
+						<a class="weixin-info" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<p>扫一扫加QQ</p><img src='images/index/qq.png' style='width: 100px;height: 100px;' />"></a>
+						<a class="email-info" data-toggle="tooltip" data-placement="top" title="fly_fish_jxm@163.com"></a>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<footer class="ele-footer width-control ">
-			<div class="clear">
-				<div class="footer-left">
-					<h3>用帮助户</h3>
-					<a href="#">服务中心</a>
-					<a href="#">常见问题</a>
-					<a href="#">在线客服</a>
-				</div>
-				<div class="footer-left">
-					<h3>商务合作</h3>
-					<a href="#">我要开店</a>
-					<a href="#">加盟指南</a>
-					<a href="#">市场合作</a>
-				</div>
-				<div class="footer-left">
-					<h3>关于我们</h3>
-					<a href="#">饿了么介绍</a>
-					<a href="#">加入我们</a>
-					<a href="#">联系我们</a>
-					<a href="#">服务协议</a>
-				</div>
-				<div class="footer-left2">
-					<p>24小时客服热线 : 10105757</p>
-					<p>意见反馈 : </p>
-					<a href="mailto:feedback@ele.me">feedback@ele.me</a>
-					<div class="be-our-funs">
-						<span>关注我们:</span>
-						<a href="#">微信</a>
-						<a href="#">微博</a>
-						<a href="#">人人</a>
-					</div>
-				</div>
+		</div>
 
-				<div class="footer-right">
-					<a href="#">
-						<img src="img/app.png" alt="饿了么app应用" />
-					</a>
-					<div class="footer-right-content">
-						<h2>下载手机版</h2>
-						<p>扫一扫，手机订餐更方便</p>
-						<a href="#">iPhone</a>
-						<a href="#">Android</a>
-					</div>
-				</div>
-
+		<!--Footer 部分-->
+		<div id="footer" class="my-footer">
+			<div class="container text-center">
+				<p class="text-muted">Copyright ©2015.6 JinXM.</p>
 			</div>
-		</footer>
+		</div>
 
-		<script type="text/javascript" src="js/index.js"></script>
+		<!--Scroll 部分-->
+		<ul class="nav pull-right scroll-top">
+			<li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+			</li>
+		</ul>
+
+		<!--模态框 部分-->
+		<div class="modal" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" type="button" data-dismiss="modal">×</button>
+						<h3 class="modal-title"></h3>
+					</div>
+					<div class="modal-body">
+						<div id="modalCarousel" class="carousel">
+
+							<div class="carousel-inner">
+
+							</div>
+
+							<a class="carousel-control left" href="#modaCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+							<a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+
+						</div>
+
+						<div class="project-item-des">
+
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="javascripts/lib/jquery-1.11.0.min.js"></script>
+		<script src="javascripts/lib/bootstrap.min.js"></script>
+		<script src="javascripts/index.js"></script>
 	</body>
 
 </html>

@@ -1,0 +1,41 @@
+.document-main{
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+}
+
+.bg{
+	width: 100%;
+	height: 557px;
+	background-image: url(../img/document/document_part1_bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.document-des{
+	width: 55%;
+	float: right;
+	padding-top: 10%;
+	padding-right: 4%;
+	text-align: right;
+}
+
+.document-des span{
+	color: #F0F0F0;
+	font-size: 33px;
+}
+
+.document-des p{
+	color: #F0F0F0;
+	font-size: 20px;
+	line-height: 1.7;
+}
+
+/*文档主题 CSS*/
+.includedoc{
+	width:100%;
+	height:100%;
+	margin-top: -40px;
+}
+
+/*文档主体*/

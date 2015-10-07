@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>汇道 | 首页</title>
+		<link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/common/header.css">
+		<link rel="stylesheet" href="../css/common/footer.css">
+		<link rel="stylesheet" href="../css/home.css">
+	</head>
+
+	<body style="font-family: 'Helvetica Neue','Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;
+ font-size: 18px;">
+		<header class="header">
+			<nav class="navbar navbar-default navbar-fixed-top my-navbar">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#expand">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img class="logo" alt="汇道" src="../img/common/logo.png" />
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="expand">
+						<ul class="nav navbar-nav">
+							<li class="my-active"><a href="#" class="nav-item">首页</a>
+							</li>
+							<li class="nav-item-li"><a href="function.html" class="nav-item">功能</a>
+							</li>
+							<li class="nav-item-li"><a href="document.html" class="nav-item">文档</a>
+							</li>
+							<li class="nav-item-li"><a href="help.html" class="nav-item">帮助</a>
+							</li>
+							<li class="nav-item-li"><a href="aboutUs.html" class="nav-item">关于我们</a>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-right" role="search">
+							<a onclick="javascript:window.open('http://manage.huidao168.com/octopus_manage/channel');">
+							
+								<button type="button" id="login" class="btn btn-primary btn-login">登录</button>
+							</a>
+							<a onclick="javascript:window.open('http://manage.huidao168.com/octopus_manage/channel/register/');" >
+								<button type="button" id="reg" class="btn btn-primary btn-reg">注册</button>
+							</a>
+						</form>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</header>
+
+		<div class="main">
+			<!--如果你发现下边item字母不是按顺序来的，别惊讶~这是个神秘代码等待你破解-->
+			<div class="item-a jumbotron">
+				<div class="container text-center">
+					<h1>汇&nbsp;&nbsp;道</h1>
+					<p>融汇之道在于精</p>
+					<a onclick="javascript:window.open('http://manage.huidao168.com/octopus_manage/channel/register/');">
+						<button id="btnUse" class="btn btn-default btn-lg btn-use">立即使用</button>
+					</a>
+				</div>
+			</div>
+			<div class="item-b text-center">
+				<div class="item-b-title">
+					<span>汇   道</span>
+					<p>一个提供移动服务接入的开放性服务平台，能够帮你快速接入移动服务，生成微网站、微商城等；还可以定制开发，把平台上的服务接入你自己的平台。</p>
+				</div>
+			</div>
+
+			<div class="item-d text-center">
+				<div class="container">
+					<p class="item-d-title">通过汇道你可以做到</p>
+					<div class="row item-d-main">
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<img src="../img/home/img_mainpage_03.png" />
+
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<img src="../img/home/img_mainpage_05.png" />
+
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<img src="../img/home/img_mainpage_07.png" />
+
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<img src="../img/home/img_mainpage_12.png" />
+
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<img src="../img/home/img_mainpage_13.png" />
+
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<img src="../img/home/img_mainpage_14.png" />
+
+						</div>
+					</div>
+					<a href="function.html">
+						<button type="button" id="btnSeemore" class="btn btn-lg btn-primary btn-seemore">查看功能详情</button>
+					</a>
+					
+				</div>
+			</div>
+			<div class="item-i text-center">
+				<div class="item-i-title">
+					<span>覆盖范围广，服务更加丰富</span>
+					<p>汇道覆盖了医疗健康、社区服务、养老保险、民生和教育等多个行业，服务人群广泛，类型多样。</p>
+				</div>
+			</div>
+			<div class="item-f text-center">
+				<div class="container">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div id="item-f-des" class="item-f-des">
+							<span>服务自由流转，告别平台约束</span>
+							<p style="text-indent:2em;">汇道只帮你整理和发现服务，你不用担心使用限制的问题。你可以随时通过接入 SDK 的方式，把服务定制到自己的移动应用上，进而利用已建立好的用户体系，这会非常实用。</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<img id="item-f-img" class="item-f-img" src="../img/home/img_mainpage_46.png" />
+					</div>
+				</div>
+			</div>
+			<div class="item-e text-center">
+				<div class="item-e-title">
+					<span>可视化操作，内容定制更轻松</span>
+					<p>提供了品类多样、适用广泛的功能插件，配合人性化的界面和简单明了的操作，能够让你轻松的完成服务内容的定制。</p>
+				</div>
+			</div>
+			<div class="item-h text-center">
+				<div class="container">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div id="item-h-des" class="item-h-des">
+							<span>多元化第三方解决方案</span>
+							<p style="text-indent:2em;">汇道提供了完善的API 规范，你可以通过接口方式获得丰富的服务，完美的实现自定义菜单、双向服务应答等功能。</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<img id="item-h-img" class="item-h-img" src="../img/home/img_mainpage_48.png" />
+					</div>
+				</div>
+			</div>
+			<div class="item-g text-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<img id="item-g-img" class="item-g-img" src="../img/home/img_mainpage_47.png" />
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div id="item-g-des" class="item-g-des">
+								<span>全面覆盖平台</span>
+								<p style="text-indent:2em;">无论你是打造轻应用，还是构建安卓、iOS客户端，汇道都可以为你提供好的服务接入方式，让你轻轻松松完成业务数据与前台对接工作。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item-j text-center">
+				<p>邀请你的加入</p>
+			</div>
+			<div class="item-k text-center">
+				<a onclick="javascript:window.open('http://manage.huidao168.com/octopus_manage/channel/register/');">
+				<button type="button" id="useNow" class="btn btn-primary btn-lg btn-usenow">立即使用</button>
+				</a>
+			</div>
+		</div>
+
+		<footer id="footer" class="footer container text-center">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<span>© 1995-2014 WONDERS INFORMATION CO.LTD.ALL RIGHT RESERVED.</span>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<span>Written by JinXM.</span>
+				</div>
+			</div>
+		</footer>
+		<script src="../js/lib/jquery-1.11.0.min.js"></script>
+		<script src="../js/lib/bootstrap.min.js"></script>
+		<script src="../js/common/footer.js"></script>
+		<script src="../js/home.js"></script>
+	</body>
+
+</html>

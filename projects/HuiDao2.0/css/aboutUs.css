@@ -1,0 +1,102 @@
+.about-main{
+	width: 100%;
+	height: 100%;
+}
+
+/*about-a CSS*/
+.about-a{
+	margin-top: 52px;
+	width: 100%;
+	height: 616px;
+	background-image: url(../img/aboutUs/aboutUs_part1_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.a-des{
+	width: 40%;
+	float: right;
+	margin-top: 17%;
+	text-align: right;
+	padding-right: 9%;
+}
+
+.a-des p{
+	font-size: 50px;
+	padding-left: 20px;
+}
+
+
+/*about-b CSS*/
+.about-b{
+	width: 100%;
+	height: 677px ;
+	background-image: url(../img/aboutUs/aboutUs02.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+/*about-c CSS*/
+.about-c{
+	width: 100%;
+	height: 600px ;
+	background-image: url(../img/aboutUs/aboutUs03.png);
+	background-size: 65% 100%;
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+}
+
+.c-about{
+	width: 50%;
+	float: right;
+	height: 100%;
+	padding-top: 3%;
+	padding-left: 10px;
+	padding-right: 40px;
+}
+
+.c-about span{
+	line-height: 2.3;
+}
+
+.c-about a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.sina-info{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-image: url(../img/aboutUs/linkMe.png);
+	border-radius: 26px;
+	margin-right: 15px;
+	background-size: 130px 26px;
+	cursor: pointer;
+	background-position: 0px 0px;
+}
+
+.weixin-info{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-image: url(../img/aboutUs/linkMe.png);
+	border-radius: 26px;
+	margin-right: 15px;
+	background-size: 130px 26px;
+	cursor: pointer;
+	background-position: -52px 0px;
+}
+
+.link-logo{
+	margin-top: 30px;
+}
+
+.link{
+	margin-top: 40px;
+}
+
+.link p{
+	line-height: 2.7;
+}

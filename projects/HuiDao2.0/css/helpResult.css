@@ -1,0 +1,64 @@
+.help-main {
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*Search CSS*/
+
+.help-search {
+	width: 100%;
+	height: 570px;
+	background-image: url(../img/help_bg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.search-input {
+	padding-top: 60px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.search-btn {
+	height: 34px;
+}
+
+.tip{
+	margin-left: 10%;
+	padding-top: 40px;
+	padding-left: 20px;
+	margin-bottom: -40px;
+	color: #BA1414;
+}
+
+/*Answer CSS*/
+.answer{
+	width: 80%;
+	min-height: 800px;
+	margin: 50px auto;
+	border-top: 1px solid #CFCFCF;
+}
+
+.item{
+	padding: 8px 20px;
+	border-bottom: 1px solid #CFCFCF;
+}
+
+.title{
+	font-size: 20px;
+	
+}
+
+.title:hover{
+	color: #6CACEE;
+	cursor: pointer;
+}
+
+.des{
+	padding: 10px 5px;
+}
+
+.des p{
+	18px
+}

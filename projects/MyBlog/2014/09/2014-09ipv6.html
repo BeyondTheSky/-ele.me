@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JinXM | 博客</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="../../css/style.css" type="text/css">
+	</head>
+
+	<body>
+		<div id="container">
+			<div class="left-col">
+				<div class="overlay"></div>
+				<div class="intrude-less">
+					<header id="header" class="inner">
+						<a href="http://jinxm.digitcv.com/#/resume" class="profilepic">
+
+							<img src="../../img/my_logo.jpg" class="js-avatar show">
+
+						</a>
+
+						<hgroup>
+							<h1 class="header-author"><a href="http://jinxm.digitcv.com/#/resume">金徐明</a></h1>
+						</hgroup>
+
+						<p class="header-subtitle">UESTC/Coder</p>
+
+						<div class="switch-btn">
+							<div class="icon">
+								<div class="icon-ctn">
+									<a href="#" class="icon-wrap icon-house">
+										<div class="birdhouse"></div>
+										<div class="birdhouse_holes"></div>
+									</a>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="switch-area">
+							<div class="switch-wrap">
+								<section class="switch-part switch-part1">
+									<nav class="header-menu">
+										<ul>
+
+											<li><a href="http://jinxm.github.io/">个人主页</a>
+											</li>
+
+											<li><a href="http://www.weibo.com/kiwi1993an/profile?rightmod=1&wvr=6&mod=personinfo">微博</a>
+											</li>
+
+											<li><a href="../../../MyProjects/Projects.html">Project</a>
+											</li>
+
+											<li><a href="https://github.com/JinXM">Github</a>
+											</li>
+
+											<li><a href="http://jinxm.digitcv.com/#/resume">Profile</a>
+											</li>
+
+										</ul>
+									</nav>
+
+								</section>
+
+							</div>
+						</div>
+					</header>
+				</div>
+			</div>
+			<div class="mid-col">
+				<nav id="mobile-nav">
+					<div class="overlay">
+						<h1 class="header-author js-mobile-header hide">金徐明</h1>
+					</div>
+					<div class="intrude-less">
+						<header id="header" class="inner">
+							<div class="profilepic">
+
+								<img src="../../img/my_logo.jpg" class="js-avatar show">
+
+							</div>
+							<hgroup>
+								<h1 class="header-author">金徐明</h1>
+							</hgroup>
+
+							<p class="header-subtitle">UESTC/Coder</p>
+
+							<nav class="header-menu">
+								<ul>
+
+									<li><a href="http://jinxm.github.io/">个人主页</a>
+									</li>
+
+									<li><a href="http://www.weibo.com/kiwi1993an/profile?rightmod=1&wvr=6&mod=personinfo">微博</a>
+									</li>
+
+									<li><a href="../../../MyProjects/Projects.html">Project</a>
+											</li>
+
+									<li><a href="https://github.com/JinXM">Github</a>
+									</li>
+
+									<li><a href="http://jinxm.digitcv.com/#/resume">Profile</a>
+									</li>
+
+									<div class="clearfix"></div>
+								</ul>
+							</nav>
+						</header>
+					</div>
+				</nav>
+				<div class="body-wrap">
+
+					<!--博客列表brgin  article为一个单位-->
+
+					<article id="post-hack-in-localstorage" class="article article-type-post" itemscope itemprop="blogPost">
+
+						<div class="article-meta">
+							<time>2014.09</time>
+						</div>
+
+						<div class="article-inner">
+
+							<input type="hidden" class="isFancy" />
+
+							<header class="article-header">
+								<h1 itemprop="name">
+      								<a class="article-title" href="#">粗谈IPV6的特征</a>
+    							</h1>
+							</header>
+
+							<div class="article-info article-info-post">
+
+
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="article-entry" itemprop="articleBody">
+								
+								<p>一、	从IPV6的前辈IPV4谈起</p>
+								<p style="text-indent: 2em;">在网路中的每台主机和路由器都有一个IP地址用以识别这些主机。目前所有的IP地址都是32位元长度的IPV4，用在IP封包的来源和目的地址栏位。这些地址也被称为identifier。IPv4的地址占32位元长，可以分配地址给大约40亿个独立装置。</p>
+								<p style="text-indent: 2em;">IPv4是一种无连接的协议，操作在使用分组交换的链路层上。此协议会尽最大努力交付分组（尽力而为），意即它不保证任何分组均能送达目的地，也不保证所有分组均按照正确的顺序无重复地到达。这些方面是由上层的传输协议处理的。</p>
+								<p>二、	因运而生的IPV6</p>
+								<p style="text-indent: 2em;">不得不说IPV4是网络上的一个巨大的成功，但是随着互联网的迅速发展，全球网路终端（主机和路由器）的迅速增加（智能手机和平板的出现有木有！！！），IPV4提供的地址数逐渐显得不够用了。这里特别说一下我国（中国）的情况，当初划分IPV4的地址时，因为中国的网络还不是太普及，所以划分到的地址数目并不多。但是随着中国经济的崛起，网民数目激增，拥有网络IP的电子设备也是遍地开花，因而IP地址慢慢的出现了紧缺。</p>
+								<p style="text-indent: 2em;">因此上，拥有跟多IP地址的IPV6因运而生。</p>
+								<p>三、	新协议IPV6</p>
+								<p style="text-indent: 2em;">作为网络专家制定出来的IPV4升级产物，IPV6到底有什么优点，是否能够真正代替IPV4并避免IPV4出现的不足呢？</p>
+								<p style="text-indent: 2em;">IPV6共有128位，16个一组，公8组（IPV4是32位，8个一组，4组）。
+表达形式如：2001：288：7001：1000：0000：0000：0000：0001 。
+</p>
+								<p style="text-indent: 2em;">PV6和IPV4的对比区别如下：</p>
+								<img src="img/ip-min.jpg" />
+							</div>
+
+						</div>
+
+					</article>
+
+					<!--end 博客列表-->
+				</div>
+			</div>
+
+			<link rel="stylesheet" href="../../css/jquery.fancybox.css" type="text/css">
+			<script src="../../../../javascripts/lib/jquery-1.11.0.min.js" type="text/javascript"></script>
+			<script src="../../js/main.js" type="text/javascript"></script>
+
+		</div>
+	</body>
+
+</html>
